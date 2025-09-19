@@ -1,0 +1,20 @@
+# version: "3.8" Descontinuado
+services:
+  librespeed:
+    image: linuxserver/librespeed
+    container_name: librespeed
+    ports:
+      - "80:80"
+  networks:
+    ip6net:
+    enable_ipv4: true
+    enable_ipv6: false
+
+  environment:
+#       enable_ipv6: false
+#      DISABLE_IPV6: 'true'
+#      - PUID=1000
+#      - PGID=1000
+#      - TZ=America/Sao_Paulo
+#      - NGINX_IPV6=0
+    restart: unless-stopped

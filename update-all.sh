@@ -19,7 +19,13 @@ versao=`lsb_release -d | grep Description: | awk '{print $2 " "$4 " "$5}'`
 #Inicio da execução
 clear
 
-opcoes=("Verificar atualizações" "Atualizar pacotes" "Atualizar distribuição" "Remover pacotes desnecessários" "Atualizar Discord" "Limpar diretório Downloads" "Sair")
+opcoes=("Verificar atualizações"
+        "Atualizar pacotes"
+        "Atualizar distribuição"
+        "Remover pacotes desnecessários"
+        "Atualizar Discord"
+        "Limpar diretório Downloads"
+        "Sair")
 
 # echo "--------------------------------------------------------"
 # echo -e "${YELLOW}Script para manutenção do Linux.${NO_FORMAT}"             
